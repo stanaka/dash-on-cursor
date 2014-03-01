@@ -1,15 +1,16 @@
 {
   "name": "dash-on-cursor",
   "main": "./lib/dash-on-cursor",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "description": "Search the word on the cursor with Dash",
-  "activationEvents": ["dash-on-cursor:open"],
+  "activationEvents": [
+    "dash-on-cursor:open"
+  ],
   "repository": "https://github.com/stanaka/dash-on-cursor",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
