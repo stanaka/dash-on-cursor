@@ -23,10 +23,10 @@ grammar2docsets =
 
 module.exports =
   activate: (state) ->
-    atom.workspaceView.command "dash-on-cursor:open", => @open()
+    atom.commands.add 'atom-workspace','dash-on-cursor:open': => @open()
 
   open: ->
-    editor = atom.workspace.getActiveEditor()
+    editor = atom.workspace.getActiveTextEditor()
     return unless editor?
 
     token = editor.tokenForBufferPosition(editor.getCursorBufferPosition())
